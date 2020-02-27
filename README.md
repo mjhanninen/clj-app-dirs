@@ -1,6 +1,7 @@
 # app-dirs
 
-Cross-platform application and user directories for Clojure.
+A lightweight Clojure library for computing paths for application and user
+directories on Linux, macOS, and Windows.
 
 ## Status
 
@@ -35,6 +36,9 @@ organization and application name as arguments:
 (app-dirs/data-dir "ACME" "Frobnator")
 ;; => #[object[File "/home/jsmith/.local/share/frobnator"]
 ```
+
+The library **does not** create these directories for you nor check their
+presence.
 
 ## Credits
 
